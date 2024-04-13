@@ -6,10 +6,6 @@ from flask import request
 def index():
     return 'Hello Flask App'
 
-@app.route('/test', methods=['POST'])
+@app.route('/forecastSVR', methods=['POST'])
 def forecastSVR():
-    return SVRController.test()
-
-# @app.route('/forecastSVR', methods=['POST'])
-# def forecastSVR():
-#     return SVRController.predictData()
+    return SVRController.predict()

@@ -252,7 +252,7 @@ def generateWeekDates(last_week_date, maxData):
     # Initialize lists to store next week numbers and dates
     list_next_week_date = []
 
-    # Start generating data for the next 12 weeks
+    # Start generating data for the next 12 week
     for i in range(maxData):
         next_week_start_date = end_date_last_week + timedelta(days=1)
         next_week_end_date = next_week_start_date + timedelta(days=6)
